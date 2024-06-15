@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".room.EditRoomActivity"
+
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewRoomName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="16dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/buttonDeleteRoom"
+        app:layout_constraintEnd_toStartOf="@+id/buttonDeleteRoom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonDeleteRoom"
+
+        android:textSize="18sp"
+        android:textStyle="bold">
+    </TextView>
+
+    <Button
+        android:id="@+id/buttonDeleteRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:backgroundTint="@color/black"
+        android:text="@string/delete_room">
+    </Button>
+
+    <Button
+        android:id="@+id/buttonAddCamera"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonAddPlug"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDeleteRoom"
+
+        android:backgroundTint="@color/black"
+        android:text="@string/add_camera">
+    </Button>
+
+
+    <Button
+        android:id="@+id/buttonAddPlug"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="16dp"
+
+        app:layout_constraintEnd_toStartOf="@+id/buttonAddCamera"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonAddCamera"
+        app:layout_constraintBottom_toBottomOf="@id/buttonAddCamera"
+
+        android:backgroundTint="@color/black"
+        android:text="@string/add_plug">
+    </Button>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewElectronics"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_marginTop="16dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAddPlug"
+        tools:layout_editor_absoluteX="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

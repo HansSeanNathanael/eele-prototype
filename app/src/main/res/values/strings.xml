@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">EELE App</string>
+
+    <string name="plug">Plug</string>
+    <string name="camera">Camera</string>
+    <string name="shutdown_all">Shutdown All</string>
+
+    <string name="room_list">Room List</string>
+    <string name="add_room">Add New Room</string>
+    <string name="room_name">Room name</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="turn_on">Turn on</string>
+    <string name="turn_off">Turn off</string>
+    <string name="edit">Edit</string>
+    <string name="automatic">Automatic</string>
+
+    <string name="delete_room">Delete Room</string>
+    <string name="delete">Delete</string>
+    <string name="add_camera">Add Camera</string>
+    <string name="add_plug">Add Plug</string>
+    <string name="view">View</string>
+    <string name="device_id">Device ID</string>
+    <string name="address">Address</string>
+    <string name="local_key">Local Key</string>
+</resources>

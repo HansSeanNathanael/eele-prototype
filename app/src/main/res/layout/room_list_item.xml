@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/textViewRoomName"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+
+        app:layout_constraintEnd_toStartOf="@+id/linearLayoutAction"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:layout_marginEnd="8dp"
+
+        android:textSize="18sp"
+        android:textStyle="bold">
+    </TextView>
+
+    <TextView
+        android:id="@+id/textViewRoomInfo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="@+id/textViewRoomName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRoomName">
+    </TextView>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutAction"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/buttonActionActivation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:backgroundTint="@color/black"
+            android:text="@string/turn_on">
+        </Button>
+        <Button
+            android:id="@+id/buttonActionEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:backgroundTint="@color/black"
+            android:text="@string/edit">
+        </Button>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchAutomatic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="@string/automatic"
+            android:gravity="center">
+        </androidx.appcompat.widget.SwitchCompat>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
